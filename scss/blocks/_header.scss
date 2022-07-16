@@ -60,7 +60,7 @@
     color: #014E56;
 }
 
-@media only screen and (max-width: 576px) and (min-width:375px){
+@include($max-width:576px) and ($min-width:375px){
     .site-header {
         background-color: #014E56;
         padding: 48px 24px;
