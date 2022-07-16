@@ -8,11 +8,7 @@
     align-items: center;
 }
 
-.logo{
-    width: 100%;
-    max-width: 127px;
-    max-height: 32px;
-}
+
 
 .burger{
     display: none;
@@ -73,6 +69,11 @@
     .header-inner {
         display: flex;
         align-items: center;
+    }
+    .logo{
+        width: 100%;
+        max-width: 127px;
+        max-height: 32px;
     }
     .burger{
         display: block;
