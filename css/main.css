@@ -945,7 +945,7 @@ main {
   background-image: url("../images/quoteicon.svg");
   background-repeat: no-repeat;
   background-size: 67px 56px;
-  background-position: calc(50%) calc(50% - 136px);
+  background-position: calc(50%) calc(50% - 112px);
 }
 
 /* .feedback__item::before{
