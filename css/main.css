@@ -796,7 +796,7 @@ main {
 
   .service {
     background-color: #012F34;
-    padding: 64px 0px;
+    padding: 64px 4px;
     background-image: url("../images/servicebg.svg");
     background-repeat: no-repeat;
     background-size: 100px 244px;
@@ -898,14 +898,15 @@ main {
 .feedback {
   background-color: #004047;
   padding: 140px 165px;
-  background-image: url("../images/feedbackbg.svg") , url("../images/feedbackbg2.svg");
+  background-image: url("../images/feedbackbg.svg") , url("../images/feedbackbg2.png");
   background-repeat: no-repeat;
-  background-size: 147px 100px , 200px 200px;
+  background-size: 147px 100px , 200px 100px;
   background-position: calc(50% - 700px) calc(50% - 350px) , calc(50% + 667px) calc(50% + 350px);
 }
 
 .feedback__title {
-  width: 932px;
+  width: 100%;
+  max-width: 932px;
   margin: 0;
   padding: 0;
   margin: 0 auto;
@@ -919,6 +920,12 @@ main {
 
   color: #FFFFFF;
 }
+
+ .feedback__span{
+    color: #79C8C7;
+  }
+  
+
 
 .feedback__list {
   margin: 0;
@@ -998,4 +1005,121 @@ main {
 .quotes__img {
   display: block;
   margin: 0 auto;
+}
+
+/* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ FEEDBACK-SECTION-RESPONSIVE_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  */
+
+
+@media only screen and (max-width: 576px) and (min-width: 375px){
+  .feedback {
+    background-color: #004047;
+    padding: 140px 4px;
+    background-image: url("../images/feedbackbg.svg") , url("../images/feedbackbg2.png");
+    background-repeat: no-repeat;
+    background-size: 147px 100px , 200px 100px;
+    background-position: left top , right bottom;
+  }
+  
+  .feedback__title {
+    width: 327px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 92px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    /* or 100% */
+  
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  .feedback__span{
+    color: #79C8C7;
+  }
+  
+  .feedback__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  
+  .feedback__item {
+    position: relative;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    padding-top: 58px;
+    background-image: url("../images/quoteicon.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+    background-position: calc(50%) calc(50% - 136px);
+    margin-bottom: 34px;
+  }
+  
+  /* .feedback__item::before{
+    position: absolute;
+    display: block;
+    width: 67px;
+    height: 56px;
+    top: -36px;
+    right: 40%;
+    left: 40%;
+    background-image: url("../images/quoteicon.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+  
+    content: "";
+  } */
+  
+  .quotes {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    /* or 167% */
+  
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+  }
+  
+  .quotes__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    /* identical to box height, or 156% */
+  
+    text-align: center;
+  
+    color: #79C8C7;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+  
+  .quotes__job {
+    display: block;
+    font-size: 13px;
+    line-height: 138%;
+    /* identical to box height, or 138% */
+  
+    text-align: center;
+  
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+  
+  .quotes__img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
 }
