@@ -60,7 +60,7 @@
     color: #014E56;
 }
 
-@include($max-width:576px) and ($min-width:375px){
+@include max-min ($max-width:576px , $min-width:375px){
     .site-header {
         background-color: #014E56;
         padding: 48px 24px;

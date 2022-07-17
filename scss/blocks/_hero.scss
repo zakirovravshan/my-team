@@ -55,9 +55,9 @@
     color: #FFFFFF;
 }
 
-@include ($max-width:576px) and ($min-width:375px){
-    .hero {
+@include max-min ($max-width:576px , $min-width:375px) {
     
+    .hero {
         padding: 50px 24px 197px 24px;
         background-color: #014E56;
         background-image: url("/images/hero-bg.svg");
@@ -66,8 +66,7 @@
         background-position: calc(50%) calc(50% + 170px) ;
     }
     
-    .content {
-        
+    .content{
         flex-direction: column;
     }
     
